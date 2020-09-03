@@ -9,7 +9,7 @@ The complete dataset comes from the [Google Quick, draw! Dataset](https://quickd
 
 ### Overview
 
-For the purpose of the Image Recognition project, I decided to focus on animals, and selected up to 8 classes. I extracted 10,000 images of each class, using the simplified drawing files that had been made available (.ndjson) on the [Google Cloud Platform.](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/simplified;tab=objects?prefix=/). These simplified files are vectors without the timing information, positioned and scaled into a 256x256 region, that I resized into 28x28 (std. MNIST dataset sizes). 
+For the purpose of the Image Recognition project, I decided to focus on animals, and selected up to 8 classes. I extracted 10,000 images of each class, using the simplified drawing files that had been made available (.ndjson) on the [Google Cloud Platform.](https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/simplified;tab=objects?prefix=/). These simplified files are vectors without the timing information, positioned and scaled into a 256x256 region, that I resized into 28x28 (std. MNIST dataset sizes) using the function vector_to_raster by @HalfdanJ (https://github.com/googlecreativelab/quickdraw-dataset/issues/19).
 
 ![image](https://user-images.githubusercontent.com/63364114/91064433-88ba8d00-e62f-11ea-9374-c99ff645a90d.png)
 
